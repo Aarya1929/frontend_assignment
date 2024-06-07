@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import HomePage from './pages/HomePage';
+import BarChartPage from './pages/BarChartPage';
+import LineChartPage from './pages/LineChartPage';
+import PieChartPage from './pages/PieChartPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/bar-chart" element={<BarChartPage />} />
+          <Route path="/line-chart" element={<LineChartPage />} />
+          <Route path="/pie-chart" element={<PieChartPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

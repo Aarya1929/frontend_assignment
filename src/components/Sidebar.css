@@ -1,0 +1,41 @@
+.Sidebar {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #282c34;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.logo-image {
+    width: 60%;
+}
+
+.Sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Sidebar nav ul li {
+    padding: 16px;
+    position: relative;
+    display: block;
+}
+
+.Sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.Sidebar nav ul li a:hover {
+    background-color: pink;
+    color: #282c34;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}

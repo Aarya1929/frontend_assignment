@@ -1,0 +1,25 @@
+.chart-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: #363B5B;
+    background-color: pink;
+    width: 100%;
+}
+
+.chart-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
